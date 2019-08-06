@@ -1,0 +1,1 @@
+docker run -it -u $(id -u):$(id -g) -p 8888:8888 -v $(pwd):/tf -v $(pwd)/keras_datasets/:/tmp/.keras/datasets/ --net host tensorflow/tensorflow:2.0.0b1-py3-jupyter
